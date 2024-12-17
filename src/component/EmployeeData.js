@@ -10,7 +10,7 @@ const Employeedata = () => {
   
     const fetchdata = async() =>{
         try{
-            const res = await fetch("http://localhost:3001/lenscorp/ai/employee", {
+            const res = await fetch(`${window.location.origin}/lenscorp/ai/employee`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

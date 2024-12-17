@@ -24,7 +24,7 @@ const Signup = () => {
     const role = formData.get('role');
     
     try {
-        const response = await axios.post(`http://localhost:3001/lenscorp/ai/signup`, {
+        const response = await axios.post(`${window.location.origin}/lenscorp/ai/signup`, {
             name, email, password, role
         });
         

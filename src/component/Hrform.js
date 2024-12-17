@@ -20,7 +20,7 @@ const Hrform = () => {
     const { name, Profile } = formData;
 
     try {
-      const res = await fetch("http://localhost:3001/lenscorp/ai/addemp", {
+      const res = await fetch(`${window.location.origin}/lenscorp/ai/addemp`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
